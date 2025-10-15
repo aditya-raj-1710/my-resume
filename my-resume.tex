@@ -1,0 +1,153 @@
+%-----------------------------------------------------------------------
+% Aditya Raj's Resume in sb2nov latex format
+%-----------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article}
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[empty]{fullpage}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome}
+\usepackage{fancyhdr}
+
+% Ensure that page numbers are not shown
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.4in}
+\addtolength{\evensidemargin}{-0.4in}
+\addtolength{\textwidth}{0.8in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.4in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Custom commands for bullet points and separation
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \textbf{#1} \hfill {#2} \\
+    \textit{#3} \hfill {#4} \vspace{-2pt}
+}
+\newcommand{\resumeSubItem}[2]{\item\small{\textbf{#1}{: #2}}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%-------------------- Heading --------------------
+\begin{center}
+  {\Huge \scshape Aditya Raj} \\[1pt]
+  Software Developer 2 | Backend \& Cloud Microservices Developer
+\end{center}
+\vspace{-10pt}
+\vspace{4pt}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r}
+  Greater Noida, India &
+  \href{tel:+919811210024}{+91-9811210024} &
+  \href{mailto:rajaditya.1710@gmail.com}{rajaditya.1710@gmail.com} \\
+  \href{https://linkedin.com/in/rajaditya1710}{\faLinkedin\ linkedin.com/in/rajaditya1710} &
+  \href{https://github.com/aditya-raj-1710}{\faGithub\ github.com/aditya-raj-1710} &
+  \\
+\end{tabular*}
+
+%-------------------- Summary --------------------
+\section{Summary}
+\small{
+Software Developer with 5 years of experience building scalable microservices on Oracle Cloud (OCI). Proficient in Java, Helidon, Spring Boot, Docker, and Kubernetes. Adept at optimizing application performance, leading cloud migrations, and integrating value-added features.
+}
+
+%-------------------- Skills ---------------------
+\section{Core Skills}
+\resumeItemListStart
+  \resumeSubItem{Languages}{Java, SQL, Python, C++}
+  \resumeSubItem{Frameworks}{Microservices, Helidon, Maven, Spring Boot}
+  \resumeSubItem{Cloud \& Containers}{OCI, CI/CD, Docker, Kubernetes, AWS, Azure}
+  \resumeSubItem{Data/Streaming}{Oracle DB, Oracle ADB, Apache Kafka}
+  \resumeSubItem{Monitoring}{Prometheus, Grafana, Jaeger}
+  \resumeSubItem{Tools \& Practices}{Git, GitLab, Jira, Confluence, REST APIs, Agile, Unit \& Integration Testing, Cline \& MCP server}
+\resumeItemListEnd
+
+%-------------------- Experience -----------------
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Oracle Financial Services Software Limited}{Bangalore}
+  {Application Developer 2 | Backend Engineer}{Sep 2022 -- Present}
+\resumeItemListStart
+  \resumeItem{Led Agile team tasks for critical release cycles and project milestones.}
+  \resumeItem{Developed orchestrator components increasing performance and reliability, adopted company-wide.}
+  \resumeItem{Optimized SQL queries and backend modules, enhancing throughput for datasets of 50M+ records.}
+  \resumeItem{Integrated and designed new cloud-native features, improving product capabilities and scalability.}
+  \resumeItem{Engineered and delivered FTP Engine workflow for ALMCS product suite.}
+  \resumeItem{Utilized Oracle Code Assist, Cline, and MCP servers to streamline and automate code pipelines.}
+  \resumeSubItem{Tech Used}{Helidon, Java, Maven, Oracle ADB, Docker, Kubernetes, OCI, Prometheus, Jaeger, Grafana}
+\resumeItemListEnd
+
+\resumeSubheading
+  {Oracle Financial Services Software Limited}{Bangalore}
+  {Associate Application Developer}{Sep 2020 -- Aug 2022}
+\resumeItemListStart
+  \resumeItem{Pioneered Conditional Assumption approach, delivering 10x speedup versus legacy solutions.}
+  \resumeItem{Migrated complex on-premise systems into cloud-native microservices architecture.}
+  \resumeItem{Executed comprehensive unit, integration, and load testing for all critical CI/CD deployments.}
+  \resumeItem{Refactored legacy codebase; coordinated integration with cross-functional teams.}
+  \resumeSubItem{Tech Used}{Java, Scala, Oracle DB, Maven, Spring Boot, Microservices, Docker, Kubernetes, OCI}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-------------------- Education ------------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Malaviya National Institute of Technology Jaipur}{Jul 2016 -- May 2020}
+    {Bachelor of Technology, Electronics \& Communication Engineering | GPA: 7.65}{}
+\resumeSubHeadingListEnd
+
+%-------------------- Projects -------------------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Stock Ticker Data Fetcher}{Jun 2025 -- Aug 2025}
+    {Python, Snowflake, Polygon.io API}{}
+  \resumeItemListStart
+    \resumeItem{Built real-time ETL pipeline in Python to fetch, process, and store U.S. stock ticker data with both daily and ad-hoc scheduling.}
+    \resumeItem{Integrated Snowflake for automated data warehousing and advanced analytics.}
+    \resumeItem{Implemented robust logging and error handling with detailed monitoring.}
+    \resumeItem{\href{https://github.com/aditya-raj-1710/stock-trading-python-app}{\faGithub\ View on GitHub}}
+  \resumeItemListEnd
+  \resumeSubheading
+    {Facial Recognition Attendance System}{Sep 2019 -- May 2020}
+    {Academic Project, Machine Learning}{}
+  \resumeItemListStart
+    \resumeItem{Engineered a computer vision solution using facial recognition to automate student attendance.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%------------------- Achievements ----------------
+\section{Awards \& Achievements}
+\resumeItemListStart
+  \resumeItem{Oracle Cloud Infrastructure 2025 Generative AI Professional}
+  \resumeItem{Oracle Cloud Infrastructure 2024 Certified Foundations Associate}
+  \resumeItem{FSGBU Pacesetter Award (Apr 2023 -- Mar 2024), Oracle Financial Services}
+  \resumeItem{Best Team Award (Apr 2023 -- Mar 2024), Oracle Financial Services}
+  \resumeItem{CODEFORCES Pupil (Max Rating 1300+); 500+ problems solved across platforms}
+  \resumeItem{Volunteered at Sphinx, Rajasthan's largest TechFest (25K+ attendees)}
+\resumeItemListEnd
+
+\end{document}
