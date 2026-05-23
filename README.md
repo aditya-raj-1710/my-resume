@@ -10,6 +10,7 @@ This repository contains the LaTeX source and compiled PDF for my most recent, A
 - **Current Role:** Software Developer at Oracle (OFSS)
 
 ## 📂 Contents
+- `index.html` - [Link](https://aditya-raj-1710.github.io/my-resume/)
 - `my-resume.tex` — The main LaTeX file (edit this to update your resume).
 - `Aditya_Raj_Resume.pdf` — Up-to-date, compiled PDF version.
 - `.gitignore` — Ignores LaTeX build artifacts.
