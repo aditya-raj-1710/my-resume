@@ -16,4 +16,4 @@ This repository contains the LaTeX source and compiled PDF for my most recent, A
 - `.gitignore` — Ignores LaTeX build artifacts.
 
 ## 🛠️ How to Build
-To compile the LaTeX source to PDF locally:
+To compile the LaTeX source to PDF locally: Use overleaf
